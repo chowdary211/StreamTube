@@ -7,7 +7,7 @@ const CommentsContainer = ({ id }) => {
     getComments();
   }, []);
 
-  getComments = async () => {
+  const getComments = async () => {
     const data = await fetch(YOUTUBE_COMMENTS_API + id + API_KEY_COMMENTS_API);
     const json = await data.json();
     setComments(json.items);
