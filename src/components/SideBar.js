@@ -6,20 +6,31 @@ const SideBar = () => {
 
   if (!isMenuOpen) return null;
   return (
-    <div className="shadow-lg w-60">
-      <ul className="">
-        <li>
+    <div className="w-1/6 flex flex-col items-center mx-auto">
+      <ul className="mt-28">
+        <li className="m-2 py-1 px-5 bg-gray-100 border border-gray-200 rounded-lg">
           <Link to="/">Home</Link>
         </li>
-        <li>Shorts</li>
-        <li>Subscriptions</li>
+        <li className="m-2 py-1 px-5 bg-gray-100 border border-gray-200 rounded-lg">
+          Short
+        </li>
+        <li className="m-2 py-1 px-5 bg-gray-100 border border-gray-200 rounded-lg">
+          Subscription
+        </li>
       </ul>
-      <hr></hr>
-      <ul>
-        <li>Library</li>
-        <li>History</li>
-        <li>Your videos</li>
-        <li>Watch later</li>
+      <ul className="-ml-3">
+        <li className="m-2 py-1 px-5 bg-gray-100 border border-gray-200 rounded-lg">
+          Library
+        </li>
+        <li className="m-2 py-1 px-5 bg-gray-100 border border-gray-200 rounded-lg">
+          Histor
+        </li>
+        <li className="m-2 py-1 px-5 bg-gray-100 border border-gray-200 rounded-lg">
+          Your video
+        </li>
+        <li className="m-2 py-1 px-5 bg-gray-100 border border-gray-200 rounded-lg">
+          Watch later
+        </li>
       </ul>
     </div>
   );
