@@ -10,7 +10,7 @@ export const YOUTUBE_VIDEOS_API =
   API_KEY;
 
 export const YOUTUBE_SEARCH_API =
-  "http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=";
+  "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=";
 
 export const YOUTUBE_COMMENTS_API =
   "https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2C%20replies&maxResults=30&videoId=";
